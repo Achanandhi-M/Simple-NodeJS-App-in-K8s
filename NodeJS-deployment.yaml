@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-new-deployment
+  labels:
+    name: my-deploy
+    tier: front-end
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      name: my-pod
+      tier: front-end
+  template:
+    metadata:
+      name: My-New-Deployment
+      labels:
+        name: my-pod
+        tier: front-end
+    spec:
+      containers:
+        - name: my-container
+          image: achanandhi/myfirst-image:v1
+          ports:
+            - containerPort: 3001
