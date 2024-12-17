@@ -6,7 +6,7 @@ metadata:
     name: my-deploy
     tier: front-end
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       name: my-pod
