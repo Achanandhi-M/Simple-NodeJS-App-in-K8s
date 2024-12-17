@@ -5,7 +5,7 @@ metadata:
   labels:
     name: my-deploy
     tier: front-end
-  namespace: argo-project
+  namespace: argo-cd-project
 spec:
   replicas: 1
   selector:
