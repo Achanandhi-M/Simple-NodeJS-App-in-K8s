@@ -5,6 +5,7 @@ metadata:
   labels:
     name: my-service
     tier: front-end
+  namespace: argo-project
 spec:
   type: NodePort
   ports:

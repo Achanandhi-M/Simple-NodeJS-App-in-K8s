@@ -5,8 +5,9 @@ metadata:
   labels:
     name: my-deploy
     tier: front-end
+  namespace: argo-project
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       name: my-pod
